@@ -1,28 +1,82 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <Header />
+    <Menu />
+    <div class="row">
+      <Conversion />
+      <Users />
+      <Revenue />
+    </div>
+    <div class="row">
+      <Calendar />
+      <div class="orders row">Orders
+          <div class="text-center">          
+            <v-btn 
+            aria-hidden="false"
+            width="40"
+            height="40">
+            <v-icon>mdi-cog</v-icon>
+            </v-btn>  
+            <v-btn
+            height="40"
+            width="156">Download CSV
+              <v-icon>mdi-arrow-collapse-down</v-icon></v-btn>  
+              <v-btn
+              height="40"
+              width="112">Export
+              <v-icon>mdi-arrow-collapse-up</v-icon></v-btn>    
+        </div>
+        
+        <div class="row">
+             <Table />
+        </div>
+      </div>
+    </div>
+  
+
+    <v-main> </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Conversion from "./components/Conversion.vue";
+import Users from "./components/Users.vue";
+import Header from "./components/Header.vue";
+import Menu from "./components/Menu.vue";
+import Revenue from "./components/Revenue.vue";
+import Calendar from "./components/Calendar.vue";
+import Table from "./components/Table.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Menu,
+    Conversion,
+    Users,
+    Revenue,
+    Calendar,
+    Table
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.orders {
+ 
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 48px 540px 24px 16px;
+  color: #333333;
+ 
+}
+.row {
+  flex: none;
 }
 </style>

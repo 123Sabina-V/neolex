@@ -26,13 +26,12 @@
         </v-list>
       
       <v-text-field
-        
         class="text_field"
         filled
         label="Search text"
         append-icon="mdi-magnify"
       ></v-text-field>
-      <v-icon aria-hidden="false"> mdi-settings </v-icon>
+      <v-icon aria-hidden="false" class="cog"> mdi-cog </v-icon>
       <v-icon aria-hidden="false"> mdi-bell </v-icon>
     </v-app-bar>
   </div>
@@ -47,7 +46,7 @@
   height: 88px;
 }
 .list-item{
-  margin: 0;
+  
 }
 .v-avatar {
   width: 28px;
@@ -61,5 +60,9 @@
   border: 1px solid #dddddd;
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.cog{
+  margin: 36px 24px 36px 36px; 
 }
 </style>

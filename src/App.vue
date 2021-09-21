@@ -9,31 +9,26 @@
     </div>
     <div class="row">
       <Calendar />
-      <div class="orders row">Orders
-          <div class="text-center">          
-            <v-btn 
+        <a class="orders">Orders</a>     
+          <v-btn 
             aria-hidden="false"
             width="40"
-            height="40">
+            height="40"
+            class="btn-stg">
             <v-icon>mdi-cog</v-icon>
             </v-btn>  
             <v-btn
             height="40"
-            width="156">Download CSV
-              <v-icon>mdi-arrow-collapse-down</v-icon></v-btn>  
-              <v-btn
-              height="40"
-              width="112">Export
-              <v-icon>mdi-arrow-collapse-up</v-icon></v-btn>    
-        </div>
-        
-        <div class="row">
-             <Table />
-        </div>
-      </div>
+            width="156"
+            class="btn-dwnl">Download CSV
+            <v-icon>mdi-arrow-collapse-down</v-icon></v-btn>  
+            <v-btn
+            height="40"
+            width="112"
+            class="btn-exp">Export
+            <v-icon>mdi-arrow-collapse-up</v-icon></v-btn>    
+          <Table />
     </div>
-  
-
     <v-main> </v-main>
   </v-app>
 </template>
@@ -72,11 +67,31 @@ export default {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 24px;
-  margin: 48px 540px 24px 16px;
+  margin: 48px 400px 24px 16px;
   color: #333333;
  
 }
 .row {
   flex: none;
+}
+.btn-dwnl{
+  margin: 48px 16px 24px 16px;
+   font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+}
+.btn-exp{
+  margin: 48px 16px 24px 16px;
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+}
+.btn-stg{
+   margin: 48px 16px 24px 16px;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+.row {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
 </style>

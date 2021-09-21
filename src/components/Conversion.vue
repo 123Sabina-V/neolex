@@ -8,12 +8,7 @@
   >
     <v-card-text>
         <div class="font-weight-bold text_card">Conversion
-        <v-btn
-        align-end>
-            <v-icon aria-hidden="false">
-                mdi-apps
-            </v-icon>  
-        </v-btn>
+        
         </div>
       <v-sheet color="rgba(0, 0, 0, .12)">
         <v-sparkline

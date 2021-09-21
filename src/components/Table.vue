@@ -95,7 +95,7 @@
 <style scoped>
  .elevation-1{
         margin: 24px 15px 32pz 24px;
-        height: 424px;
+        height: 104px;
        
  }
 </style>

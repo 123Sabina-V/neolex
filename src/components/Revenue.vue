@@ -4,7 +4,7 @@
     color="grey"
     dark
     height="472"
-    width="1100"
+    width="612"
      
   >
     <v-card-text>
@@ -25,14 +25,14 @@
     </v-card-text>
 
     <v-card-text>
-      <div class="text-h4 font-weight-thin">
+      <div class="card">
         Sales Last 24h
       </div>
     </v-card-text>
 
     <v-divider></v-divider>
 
-    <v-card-actions class="justify-center">
+    <v-card-actions class="card">
       <v-btn
         block
         text
@@ -61,9 +61,13 @@
 <style scoped>
     .card{
         margin: 24px 16px 24px 16px;
+        font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
     }
     .text_card{
         font-size: 24px;
         padding: 32px 94px 32px 32px;
     }
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 </style>

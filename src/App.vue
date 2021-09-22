@@ -26,8 +26,9 @@
             height="40"
             width="112"
             class="btn-exp">Export
-            <v-icon>mdi-arrow-collapse-up</v-icon></v-btn>    
-          <Table />
+            <v-icon>mdi-arrow-collapse-up</v-icon></v-btn>
+            <div class="row"><Table /></div>    
+          
     </div>
     <v-main> </v-main>
   </v-app>

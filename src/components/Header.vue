@@ -26,6 +26,8 @@
         </v-list>
       
       <v-text-field
+        width= "106"
+        height= "56"
         class="text_field"
         filled
         label="Search text"
@@ -46,7 +48,7 @@
   height: 88px;
 }
 .list-item{
-  
+  padding: 0%;
 }
 .v-avatar {
   width: 28px;

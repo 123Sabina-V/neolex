@@ -1,7 +1,7 @@
 <template>
-  <div class="text-xs-center">
+  <div class="text-xs-center mx-auto">
     <v-app-bar class="nav_menu" height="56">
-       
+    
     <div class="center">
         <a href="#" class="promotion-btn das">Dashboard</a>
     </div>   
@@ -24,6 +24,7 @@
   </div>
 </template>
 <style >
+
  .promotion-btn {
   /* other styles */
   display: block;
@@ -76,8 +77,21 @@ color: #000000;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .nav_menu {
+    color:black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    @media screen and (min-device-width: 1600px) {
+    nav_menu {width: 1500px;}
+   }
+   @media screen and (device-width: 1280px) {
+    nav_menu {width: 1100px;}
+   }
+   @media screen and (device-width: 1024px) {
+    nav_menu {width: 980px;}
+   }
+   @media screen and (device-width: 812px) {
+    nav_menu {width: 812px;}
+   }
 }
 .promotion-btn{
     font-family: 'Montserrat', sans-serif;
